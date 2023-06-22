@@ -16,7 +16,7 @@
         }
 
         td {
-            border: 1px solid black;
+            border: 2px solid black;
             direction: rtl;
             width: 130px;
             height: 130px;
@@ -28,6 +28,9 @@
 
         fieldset {
             float: left;
+			direction: rtl;
+			border-radius: 7px;
+			padding: 20px;
         }
 
             fieldset#words {
@@ -40,6 +43,16 @@
             width: 200px;
             margin-left: 50%;
         }
+		
+		#explain{		
+			direction: rtl;
+			margin: auto;
+			margin-top: 30px;
+			width: 300px;
+			border: 2px solid gray; 
+			padding: 10px; 
+			border-radius: 7px;
+		}
     </style>
 </head>
 <body>
@@ -106,6 +119,16 @@ z,
             </fieldset>
 
     </fieldset>
+	<div id="explain">
+	איך להשתמש:
+	<ol>
+	  <li>מלא את רשימת המילים בקופסת אוצר המילים</li>
+	  <li>לחץ ערבב והעתק</li>
+	  <li>לחץ העתק טבלה</li>
+	  <li>פתח קובץ וורד, והדבק שם את הטבלה שהעתקת</li>
+	  <li>חזור על הצעדים מ-2 והצור כרטיסיות שונות</li>
+	</ol>
+	</div>
     <script>
         /** The function that will create a bingo card */
         function bingo(bng) {
